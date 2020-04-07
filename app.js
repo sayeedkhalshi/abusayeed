@@ -13,6 +13,7 @@ app.use(express.static(__dirname + ('/public')));
 //routes
 app.use('/', require('./routes/index.js'));
 app.use('/contact', require('./routes/contact.js'));
+app.use('/my-story', require('./routes/my-story.js'));
 
 const PORT = process.env.PORT || 8080;
 
